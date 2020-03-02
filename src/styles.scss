@@ -1,1 +1,7 @@
-/* You can add global styles to this file, and also import other style files */
+// Bootstrap 4
+$body-bg: #323232;
+$body-color: rgba(255, 255, 255, 0.5);
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+// Boxicons
+@import "../node_modules/boxicons/css/boxicons.min.css";
