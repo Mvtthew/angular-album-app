@@ -1,0 +1,11 @@
+<div class="card"
+	 (click)="showLarge()">
+	<div [style.backgroundImage]="'url(' + photo.thumbnailUrl + ')'"
+		 class="card-header">
+	</div>
+	<div class="card-body">
+		{{ photo.title }}
+	</div>
+	<app-photo-large [photo]="photo"
+					 *ngIf="photoLargeVisible"></app-photo-large>
+</div>

@@ -1,0 +1,16 @@
+<div class="card">
+	<a routerLink="album/{{album.id}}">
+		<div class="card-header"></div>
+		<div class="card-body">
+			<h2>
+				Album {{ album.id }}
+			</h2>
+			<p>
+				{{ album.title }}
+			</p>
+			<p class="by m-0">
+				by {{ album.userId }}
+			</p>
+		</div>
+	</a>
+</div>

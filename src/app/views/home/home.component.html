@@ -1,1 +1,6 @@
-<p>home works!</p>
+<div class="row">
+	<div class="col-lg-4 col-md-6"
+		 *ngFor="let album of albumsList">
+		<app-album-card [album]="album"></app-album-card>
+	</div>
+</div>
