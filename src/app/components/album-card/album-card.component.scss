@@ -1,0 +1,13 @@
+.card {
+	transition: 0.15s ease-in-out;
+	top: 0;
+	position: relative;
+	&:hover {
+		top: -5px;
+		box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1);
+	}
+	&:active {
+		top: -1px;
+		box-shadow: 11px 11px 20px rgba(0, 0, 0, 0.1);
+	}
+}

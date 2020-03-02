@@ -11,6 +11,7 @@ import { AlbumCardComponent } from './components/album-card/album-card.component
 import { AlbumComponent } from './views/album/album.component';
 import { PhotoComponent } from './components/photo/photo.component';
 import { PhotoLargeComponent } from './components/photo/photo-large/photo-large.component';
+import { CopyrightComponent } from './shared/copyright/copyright.component';
 
 @NgModule({
 	declarations: [
@@ -21,7 +22,8 @@ import { PhotoLargeComponent } from './components/photo/photo-large/photo-large.
 		AlbumCardComponent,
 		AlbumComponent,
 		PhotoComponent,
-		PhotoLargeComponent
+		PhotoLargeComponent,
+		CopyrightComponent
 	],
 	imports: [
 		BrowserModule,
