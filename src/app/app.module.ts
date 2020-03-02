@@ -12,6 +12,7 @@ import { AlbumComponent } from './views/album/album.component';
 import { PhotoComponent } from './components/photo/photo.component';
 import { PhotoLargeComponent } from './components/photo/photo-large/photo-large.component';
 import { CopyrightComponent } from './shared/copyright/copyright.component';
+import { LoadingComponent } from './shared/loading/loading.component';
 
 @NgModule({
 	declarations: [
@@ -23,7 +24,8 @@ import { CopyrightComponent } from './shared/copyright/copyright.component';
 		AlbumComponent,
 		PhotoComponent,
 		PhotoLargeComponent,
-		CopyrightComponent
+		CopyrightComponent,
+		LoadingComponent
 	],
 	imports: [
 		BrowserModule,

@@ -11,6 +11,7 @@ import { ActivatedRoute } from '@angular/router';
 export class AlbumComponent implements OnInit {
 
 	photos: Photo[];
+	loading: boolean = true;
 
 	constructor(
 		private albumService: AlbumService,
@@ -19,7 +20,10 @@ export class AlbumComponent implements OnInit {
 	) { }
 
 	ngOnInit(): void {
-		this.albumService.getAlbumPhotos(parseInt(this.route.snapshot.paramMap.get('id'))).subscribe(photos => this.photos = photos);
+		this.albumService.getAlbumPhotos(parseInt(this.route.snapshot.paramMap.get('id'))).subscribe(photos => {
+			this.photos = photos;
+			this.loading = false;
+		});
 	}
 
 }
